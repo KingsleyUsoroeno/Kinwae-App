@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".features.welcome.auth.service_provider.ServiceProviderSignUpFragment">
+
+        <ImageView
+            android:id="@+id/up_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="20dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:tint="@color/textColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_up_button" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/backTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textColor="@color/textColor"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/up_button"
+            app:layout_constraintStart_toEndOf="@id/up_button"
+            app:layout_constraintTop_toTopOf="@id/up_button" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/currentFragTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="Personal"
+            android:textColor="@color/textColor"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/up_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/up_button" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/openAccTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="20dp"
+            android:text="Open New Account"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/up_button"
+            app:layout_constraintTop_toBottomOf="@id/up_button" />
+
+        <com.badoualy.stepperindicator.StepperIndicator
+            android:id="@+id/stepperIndicator"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/openAccTextView"
+            app:stpi_animDuration="200"
+            app:stpi_circleColor="@color/orange"
+            app:stpi_circleRadius="8dp"
+            app:stpi_indicatorColor="@color/orange"
+            app:stpi_labels="@array/stepLabels"
+            app:stpi_lineDoneColor="@color/orange"
+            app:stpi_showDoneIcon="true" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/stepperIndicator" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

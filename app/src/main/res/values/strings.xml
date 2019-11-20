@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Kinwae Systems</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="stepLabels">
+        <item>Personal</item>
+        <item>Contact</item>
+        <item>Upload</item>
+    </string-array>
+
+
+    <string-array name="states">
+        <item>Abuja</item>
+        <item>Akure</item>
+        <item>Lagos</item>
+        <item>Uyo</item>
+        <item>Benue</item>
+        <item>Bayelsa</item>
+        <item>Calabar</item>
+        <item>Akwa Ibom</item>
+        <item>Jos</item>
+        <item>Ney York</item>
+        <item>England</item>
+        <item>New Zealand</item>
+        <item>Germany</item>
+        <item>Congo</item>
+        <item>Drc</item>
+    </string-array>
+
+    <string-array name="cities">
+        <item>Uyo</item>
+        <item>Seattle</item>
+        <item>London</item>
+        <item>Bauchi</item>
+        <item>Ujota</item>
+        <item>Mary Land</item>
+    </string-array>
+</resources>
